@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>npm files</title>
+    
+                                <!--Important linking after installing package-->
+                                <link rel="stylesheet" href="node_modules/bootstrap/css/bootstrap ">
+<h1> Hello world of NPM</h1>
+
+    <style>
+    [class*= "col"]{
+        padding: 1rem;
+        background-color: black;
+        border:2 px solid blue;
+        color:crimson;
+
+    }
+
+    </style>
+
+</head>
+                                <!--<p>1. in terminal write <b>npm init</b></p>
+<p>2. for the package name, in terminal write <b>bootstrap-npm</b> </p>
+<p>3. write npm install bootstrap to install bootstrpa with all the Dependencies,
+     <b>its successful when node modules folder made at the left hand side.</b>
+</p> -->
+<body>
+                                <!--use shortcut script:src to make faster tags 
+                                bootstrap.bundle.js gives us the bootstrap + the JS dependencies-->    
+                                <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+                                <!--To install popper,write this line below-->
+                                <!-- in TERMINAL WRITE: [npm install @popperjs/core --save]   -->
+                                <script src="node_modules/bootstrap/dist/js/"></script>
+    
+ <h1>We now start with the grid!</h1>
+
+ <!--For the container to use entire screen width
+    use the container-fluid class-->
+ <!--You can mix the container with 
+    a break point-->
+ <hr>
+ <div class = "container-fluid border">
+    container fluid border
+ </div>
+
+ <!--use dot for quick div of row and column, 
+    .col*2 gave fast af instamt 2 col div-->
+ <div class="container-sm border">   
+    <class="row">
+        <div class="col">Column 1</div>
+        <div class="col">Column 2</div>
+        <hr>
+        <div class="col-4">Col-4 set size</div>
+        <div class="col-4">Col 4 set size</div>
+        <div class="col">Col Auto</div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

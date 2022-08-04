@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDN files</title>
+
+    <h1>Hello world of CDN</h1>
+
+    <style>
+      [class*="col"] {
+        padding: 1rem;
+        background-color: black;
+        border: 2 px solid blue;
+        color: crimson;
+      }
+      .child{
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <h1>We now start with the grid!</h1>
+
+    <!--For the container to use entire screen width
+    use the container-fluid class-->
+    <!--You can mix the container with a break point-->
+    <hr />
+    <div class="container-fluid border">
+      <!--use dot for quick div of row and column, 
+    .col*2 gave fast af instamt 2 col div-->
+      <div class="container-sm border">
+        <div class="row">
+          <div class="col-lg-8">Col-lg-8</div>
+          <div class="col-md-6">Col-md-6</div>
+          <hr />
+          <div class="col-4">Col-4 takes 4 units</div>
+          <div class="col-4">Col 4, 4 units</div>
+          <div class="col">simple Col is col auto</div>
+          <hr />
+          <p>But we usually do Variable width using Breakpoints</p>
+          <hr />
+          <div class="col-md-4">Col-md-4</div>
+          <div class="col-md-8">Col-md-8</div>
+          <div class="col-md-6 col-lg-2">Col-md-4 col-lg-2</div>
+          <div class="col-md-8 col-sm-12">Col-md-8 col-sm-12</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr />
+      <p>This is Column text from bootstrap site below</p>
+      <hr />
+      <div class="row row-cols-2 row-cols-lg-3">
+        <div class="col">Col 1</div>
+        <div class="col">Col 2</div>
+        <div class="col">Col 3</div>
+        <div class="col">Col 4</div>
+        <div class="col">Col 5</div>
+        <div class="col">Col 6</div>
+        <div class="col-4 col-lg-2">col-4 col-lg-2</div>
+        <div class="col-4 col-lg-2">col-4 col-lg-2</div>
+        <div class="col-4 col-lg-2">col-4 col-lg-2</div>
+        <div class="col-4 col-lg-2">Column</div>
+        <div class="col-4 col-lg-2">Column</div>
+        <div class="col-4 col-lg-2">Column</div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="container border">
+      <div class="row align align-items-start" style="height: 450px">
+        <hr />
+        <p>
+          The start at end of class name indiciates alignment You can align
+          items at start/center/ end
+        </p>
+        <hr />
+        <div class="col">Col 1</div>
+        <div class="col">Col 2</div>
+        <div class="col">Col 3</div>
+      </div>
+    </div>
+
+    <div class="container border">
+      <div class = "row justify-content-center">
+        <p>
+          The start at end of class name indiciates justified placement
+          so you can align items at the 
+        </p>
+        <div class="col-lg-10">Justified col-1</div>
+      <div class="col-sm-8">Justified col-2</div>
+    </div>
+
+    <div class = "container-border">
+      <hr>
+      Now we go to see the <b>Gutters in Bootstrap</b>
+      <hr>
+      <div class = "row g-0">
+        <hr>
+        <p>Gutter used in row class, is <b>g follwed by a number #</b>
+        <b>gx-1</b>shows x axis gutter change.
+        The gutter eliminates padding depending on the axis you want.
+        </p>
+        <hr>
+        <div class="col-6">Gutter 1</div>
+        <div class="col-6">G 2</div>
+        <div class="col-6">G 3</div>
+        <div class="col-6">G 4</div>
+
+
+      </div>
+      <hr>
+      <p>We now move to the components</p>
+
+    </div>
+  </body>
+</html>
